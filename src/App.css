@@ -1,5 +1,14 @@
+@font-face {
+  font-family: NAMU-Pro;
+  src: url(Circe.woff);
+}
+
 .App {
   text-align: center;
+  background-color: #000000;
+  font-family: NAMU-Pro,Helvetica,Arial,sans-serif;
+
+  
 }
 
 .App-logo {
@@ -36,4 +45,28 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+
+/* React SwitchTransition Animation CSS Rules */
+.card {
+  /* padding: 15px;
+  margin: 15px 100px; */
+  /* border: 2px solid rgba(0, 0, 0, .9); */
+  /* background-color: rgba(50, 70, 150, .5); */
+  /* color: rgba(50, 70, 150, .9); */ 
+}
+.card-enter {
+  opacity: 0;
+}
+.card-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.card-exit {
+  opacity: 0;
+}
+.card-exit-active {
+  opacity: 1;
+  transition: opacity 1s;
 }
