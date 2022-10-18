@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -7,27 +7,26 @@ import {Result} from './components/Result';
 import {Question} from './components/Question';
 import styles from './Quiz.module.css'
 
-const location = window.location.href;
 
-console.log(location);
 const router = createBrowserRouter([
     {
-        path: `${location}/`,
+        path: `/`,
         element: <Question />,
         
     },
     {
-        path: `${location}/result`,
+        path: `/result`,
         element: <Result />
     },
-]);
+],{
+    basename: window.location.pathname
+});
 
 export const Quiz: React.FC = ()=>{
 
-
     // return<div className={styles.quiz} style={{backgroundImage:`url(${back1})` }}>
     return<div className={styles.quiz}>
-        <RouterProvider router={router} />
+        <RouterProvider router={router}  />
     </div>
 }
 
