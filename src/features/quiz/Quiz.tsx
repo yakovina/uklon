@@ -6,14 +6,18 @@ import {
 import {Result} from './components/Result';
 import {Question} from './components/Question';
 import styles from './Quiz.module.css'
+
+const location = window.location.href;
+
+console.log(location);
 const router = createBrowserRouter([
     {
-        path: "/uklon",
+        path: `${location}/`,
         element: <Question />,
         
     },
     {
-        path: "/uklon/result",
+        path: `${location}/result`,
         element: <Result />
     },
 ]);
