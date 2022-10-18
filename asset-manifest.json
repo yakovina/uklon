@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/uklon/static/css/main.9e404df9.css",
-    "main.js": "/uklon/static/js/main.9b5034f2.js",
+    "main.css": "/uklon/static/css/main.6fba4088.css",
+    "main.js": "/uklon/static/js/main.7ad476fd.js",
     "static/js/787.ba855225.chunk.js": "/uklon/static/js/787.ba855225.chunk.js",
-    "static/media/bg.png": "/uklon/static/media/bg.bfeb81d9bc6732f7e48c.png",
+    "static/media/bg.png": "/uklon/static/media/bg.ebe3bd1e6cfccc64998d.png",
     "static/media/Circe.woff": "/uklon/static/media/Circe.8da5582a5f6c40d4b70d.woff",
     "index.html": "/uklon/index.html",
-    "main.9e404df9.css.map": "/uklon/static/css/main.9e404df9.css.map",
-    "main.9b5034f2.js.map": "/uklon/static/js/main.9b5034f2.js.map",
+    "main.6fba4088.css.map": "/uklon/static/css/main.6fba4088.css.map",
+    "main.7ad476fd.js.map": "/uklon/static/js/main.7ad476fd.js.map",
     "787.ba855225.chunk.js.map": "/uklon/static/js/787.ba855225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e404df9.css",
-    "static/js/main.9b5034f2.js"
+    "static/css/main.6fba4088.css",
+    "static/js/main.7ad476fd.js"
   ]
 }
