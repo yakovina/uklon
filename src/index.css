@@ -7,6 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+*::selection {
+  background: #1de5ac; /* Safari */
+  color: #000000;
+}
+*::-moz-selection {
+  background: #1de5ac; /* Firefox */
+  color: #000000;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

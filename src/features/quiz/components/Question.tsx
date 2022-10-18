@@ -1,7 +1,7 @@
 import {
     Container
 } from '@mui/material';
-import {
+import React, {
     useEffect,
     useState,
 } from 'react';
@@ -21,7 +21,9 @@ import {
     QuestionType,
 } from '../types';
 import { CSSTransition } from 'react-transition-group';
+import {Header} from './Header';
 import { Loader } from './Loader';
+import AnsIcon from '../img/ansIcon.svg'
 
 
 
@@ -69,6 +71,7 @@ export const Question = () => {
 
     const getQuestions = () => {
         return <div className={styles.questionContainer} style={{ backgroundImage: `url(${bg})` }}>
+            <Header />
             <CSSTransition in={inProp} timeout={1000} classNames="card">
                 <div className={`${styles.question} card`}>
                     <Container maxWidth="md" >
@@ -79,9 +82,9 @@ export const Question = () => {
                             {item?.answers.map((answer) => {
                                 return <li className={styles.answer} key={answer.id}>
                                     <button onClick={() => handleAnswerClick(answer)}>
-                                        <svg className={styles.icon} width="76" height="24" viewBox="0 0 76 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M74.8982 3.81845C72.5455 1.4187 59.4157 4.84187 58.2965 7.11055C57.7066 8.30706 59.6409 11.3941 63.3498 14.982C66.5847 18.1094 69.7205 20.9948 71.6901 20.3596C73.6596 19.7244 77.2576 6.2182 74.8982 3.81845Z" fill="#1DE5AC" />
-                                        </svg>
+                                        <span  className = {styles.icon}>
+                                         <img src={AnsIcon} alt="icon"/>
+                                        </span>
                                         <span>{answer.text}</span>
                                     </button>
                                 </li>

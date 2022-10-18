@@ -8,19 +8,21 @@ import {Question} from './components/Question';
 import styles from './Quiz.module.css'
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: <Question />
+        path: "/uklon",
+        element: <Question />,
+        
     },
     {
-        path: "/result",
+        path: "/uklon/result",
         element: <Result />
     },
 ]);
 
 export const Quiz: React.FC = ()=>{
 
+
     // return<div className={styles.quiz} style={{backgroundImage:`url(${back1})` }}>
-    return<div className={styles.quiz}>   
+    return<div className={styles.quiz}>
         <RouterProvider router={router} />
     </div>
 }

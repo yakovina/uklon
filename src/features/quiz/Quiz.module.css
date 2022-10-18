@@ -8,22 +8,50 @@
     /* text-transform: uppercase; */
 
 
-.question {
+.question, .header {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #ffffff;
     width: 100%;
-    padding: 40px;
-    margin: 40px;
-    backdrop-filter: blur(2px);
+    max-width: 900px;
+
+    padding: 30px;
+    margin: 30px auto;
+    backdrop-filter: blur(10px);
     font-size: 18px;
     box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
     line-height: 1.3636363636;
     border-radius: 25px;
+    border: 2px solid #1de5ac;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.plash{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 65px;
+    display: flex;
 }
 
 .questionContainer {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 100px;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-end;
     background-size: cover;
@@ -54,16 +82,14 @@
     text-transform: uppercase;
     color: #ffffff;
     width: 100%;
-    background-color: inherit;
     font-size: inherit;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: left;
-    width: 100%;
     display: flex;
     align-items: center;
     border: none;
-    background-color: rgba(255, 255, 255, 0.03);
-    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 13px;
     cursor: pointer;
     transition: 0.5s;
     font-family: inherit;
@@ -74,7 +100,7 @@
 .question .answer button:hover {
 
     transition: 0.5s ease-in-out;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
     /* border: 1px solid #1de5ac */
 }
@@ -86,11 +112,10 @@
 } */
 
 .question .icon {
-    text-transform: uppercase;
-    color: #1de5ac;
-    height: 35px;
-    width: 70px;
-    margin-right: 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .questionText {
@@ -174,8 +199,18 @@
 
 
 @media screen and (max-width: 980px) {
-    .question {
+    .question,  .header {
         padding: 20px;
         margin: 20px;
     }
+
+   .header {
+       box-sizing: border-box;
+       width: calc(100% - 40px);
+       margin: 20px 0 0 0;
+    }
+
+   .plash{
+       display: none;
+   }
 }

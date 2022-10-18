@@ -1,6 +1,6 @@
 import { QuestionList } from "./types";
-import Bg1 from './img/bg.jpeg';
-import Bg2 from './img/bg2.jpeg';
+import Bg1 from './img/bg.png';
+import Bg2 from './img/bg.png';
 
 export const questionMock: QuestionList = [{
     id: 101,
