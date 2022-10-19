@@ -14,7 +14,6 @@
     color: #ffffff;
     width: 100%;
     max-width: 900px;
-
     padding: 30px;
     margin: 30px auto;
     backdrop-filter: blur(10px);
@@ -29,13 +28,35 @@
     position: absolute;
     top: 0;
     left: 50%;
+    padding: 15px 30px;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo{
+.logo, .logoHmarochos{
     height: 35px;
     display: flex;
     justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 14px;
+    margin-left: auto;
+}
+.logo:hover{
+    text-decoration: underline;
+}
+
+.logoHmarochos{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+   position: absolute;
+    top:5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .plash{
@@ -208,7 +229,19 @@
        box-sizing: border-box;
        width: calc(100% - 40px);
        margin: 20px 0 0 0;
+       justify-content: space-between;
     }
+
+   .logo{
+       flex-wrap: wrap;
+       justify-content: left;
+       height: auto;
+       max-width: 105px;
+   }
+   .logo img{
+       height: 30px;
+       margin-bottom: 5px;
+   }
 
    .plash{
        display: none;
