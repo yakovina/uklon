@@ -88,12 +88,6 @@ export const Question = () => {
                 setInProp(true)
             }).catch(err => console.error(err));
 
-        new Image().src = bg;
-        setTimeout(() => {
-            setLoading(false);
-            setInProp(true)
-        }, 1500)
-
     }, [bg])
 
 

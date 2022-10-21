@@ -1,5 +1,5 @@
 import {QuestionList} from '../../types';
-import Img from '../../img/scenes/page_04.svg'
+import Img from '../../img/scenes/page_04.jpg'
 
 
 

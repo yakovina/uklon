@@ -21,7 +21,7 @@ import {
 } from '../quizSlice';
 import {returnIcons} from '../utils';
 import {Header} from './Header';
-import Bg from '../img/cover.svg'
+import Bg from '../img/cover.jpg'
 import { CSSTransition } from 'react-transition-group';
 import {Loader} from './Loader';
 import {drivers} from '../const';

@@ -25,6 +25,7 @@
     line-height: 1.3636363636;
     border-radius: 25px;
     border: 2px solid #1de5ac;
+    box-sizing: border-box;
 }
 
 .df {
@@ -325,15 +326,17 @@
    .header {
        box-sizing: border-box;
        width: calc(100% - 40px);
-       margin: 20px 0 0 0;
+       margin: 0;
        justify-content: space-between;
+       top: 0;
     }
 
    .logo{
-       flex-wrap: wrap;
+       /*flex-wrap: wrap;*/
        justify-content: left;
-       height: auto;
-       max-width: 105px;
+       align-items: center;
+       /*height: auto;*/
+       /*max-width: 105px;*/
    }
    .logo img{
        height: 30px;
@@ -343,4 +346,111 @@
    .plash{
        display: none;
    }
+
+    .questionContainer{
+        padding-top: 250px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .questionContainer{
+        background-size: auto 100%;
+    }
+
+    .logo, .logoHmarochos{
+        padding: 15px;
+        height: auto;
+        width: 120px;
+    }
+    .logo{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .logo span{
+        text-align: center;
+    }
+    .logo img, .logoHmarochos img{
+        width: 90%;
+        height: auto;
+    }
+    .header{
+        align-items: stretch;
+        padding: 20px 0;
+        margin: 0;
+
+    }
+
+    .question{
+        padding: 30px;
+    }
+    .questionText{
+        padding-top: 0;
+    }
+
+    .question .answer{
+        margin-top: 30px;
+        padding-top: 0;
+    }
+    .question .answer:first-child {
+        margin-top: 0;
+    }
+
+    .question .characterWindow {
+        width: 100%;
+
+    }
+
+    .question .characterWindow button{
+        padding-top: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+    .question .characterWindow button img{
+        transform: translateY(-20px);
+    }
+    .questionContainer{
+        padding-top: 250px;
+    }
+
+    .questionText p{
+        margin: 20px 0 0 0;
+    }
+    .questionText p:first-child{
+        margin: 0;
+    }
+
+    .df{
+    flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .question .answer button {
+        text-align: center;
+
+    }
+    .question .answer button div{
+        display: block;
+        text-align: center;
+        width: 100%;
+
+    }
+    .question .answer button .icon{
+        display: none;
+    }
+
+    .question .answer button,  .button {
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
+    }
+
+    .question .car{
+        display: none;
+    }
+
+    .question>div {
+        padding: 0;
+    }
+
 }

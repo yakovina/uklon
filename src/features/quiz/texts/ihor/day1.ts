@@ -1,5 +1,5 @@
 import {QuestionList} from '../../types';
-import Img from '../../img/scenes/page_05.svg'
+import Img from '../../img/scenes/page_05.jpg'
 
 export const Day1: QuestionList = [{
     id: 101,

@@ -1,7 +1,6 @@
-import Bg1 from '../img/bg.png';
 import {QuestionList} from '../types';
 import {drivers} from '../const';
-import Cover from '../img/cover.svg'
+import Cover from '../img/cover.jpg'
 
 export const BeginList: QuestionList = [{
     id: 101,
@@ -31,8 +30,9 @@ export const BeginList: QuestionList = [{
 <p>Авто: <b>Volkswagen Golf</b></p>
 <p>В Uklon: <b>4 місяці</<b></p>
            `,
-            characterImg:drivers[0],
-            next: 103},
+            characterImg: drivers[0],
+            next: 103,
+        },
             {
                 id: 2,
                 text: `<p><b>Ігор</b>, живе та працює в Одесі</p>
@@ -40,12 +40,14 @@ export const BeginList: QuestionList = [{
 <p>Авто: <b>Hyundai Accent</b></p>
 <p>В Uklon: <b>3 роки</b></p>`
                 ,
-                characterImg:drivers[1],
-                next: 104},
+                characterImg: drivers[1],
+                next: 104,
+            },
         ],
 
     },
-    {id: 103,
+    {
+        id: 103,
         question: `Микита налаштований отримувати лише «п'ятірки», адже з переїздом до нового міста його родина отримала багато фінансових викликів. Для Микити це – основне місце роботи. Цінує Uklon за гнучкий графік та стабільний заробіток.`,
         answers: [
             {
@@ -55,7 +57,8 @@ export const BeginList: QuestionList = [{
             },
         ],
     },
-    {id: 104,
+    {
+        id: 104,
         question: `Ігор налаштований отримувати лише «п'ятірки», аби допомогти товаришу у ЗСУ назбирати на дрон для підрозділу. Для Ігора робота з Uklon — підробіток. Він береться за пару вигідних замовлень на день, коли з пасажиром по дорозі. Цінує можливість додаткового заробітку.`,
         answers: [
             {

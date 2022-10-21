@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -23,8 +23,6 @@ const router = createBrowserRouter([
 });
 
 export const Quiz: React.FC = ()=>{
-
-    // return<div className={styles.quiz} style={{backgroundImage:`url(${back1})` }}>
     return<div className={styles.quiz}>
         <RouterProvider router={router}  />
     </div>
