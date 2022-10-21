@@ -1,5 +1,5 @@
-import Bg1 from '../../img/bg.png';
 import {QuestionList} from '../../types';
+import Img from '../../img/scenes/page_04.svg'
 
 
 
@@ -9,6 +9,7 @@ export const Day1: QuestionList = [{
     question: `<p>У п'ятницю ви вирішили попрацювати до ночі, аби дочекатися найвищого попиту перед комендантською годиною.</p>
 
 <p>Маєте замовлення з центру (судячи з усього, це бар) прямо до району де ви мешкаєте. Приймаєте?</p>`,
+    img: Img,
     answers: [
         {
             id: 1,

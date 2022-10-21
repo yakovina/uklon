@@ -1,7 +1,9 @@
 import {QuestionList} from '../../types';
+import Img from '../../img/scenes/page_02.svg'
 
 export const Day3: QuestionList = [{
     id: 101,
+    img: Img,
     question: `<p>Ви отримали замовлення в центрі міста й прибули на точку посадки. Пасажирка ще не вийшла, тож ви чекаєте.</p>
 <p>Зателефонувати їй?</p>`,
     answers: [

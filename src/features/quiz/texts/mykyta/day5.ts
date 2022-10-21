@@ -1,8 +1,9 @@
 import {QuestionList} from '../../types';
-import {getIdsByDay} from '../../utils';
+import Img from '../../img/scenes/page_06.svg'
 
 export const Day5: QuestionList = [{
     id: 101,
+    img: Img,
     question: `Ви меломан, тому в салоні майже не слухаєте радіо. З великою любов'ю сформували чималий джазовий плейліст для роботи і регулярно його оновлюєте.`,
     answers: [
         {

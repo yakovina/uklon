@@ -31,8 +31,7 @@ import AnsIcon from '../img/ansIcon.svg';
 import Line from '../img/line.svg'
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
-import Character1 from '../img/ch1.png';
-import Character2 from '../img/ch2.png';
+import {drivers} from '../const';
 
 
 const MAX_RATE = 5;
@@ -52,8 +51,7 @@ export const Question = () => {
     const avatar = useMemo(()=>{
        if(!characterId) return;
 
-       if(characterId === 1) return Character1;
-       if(characterId ===2) return Character2;
+       return drivers[characterId -1];
     }, [characterId]);
 
     const questions: QuestionList = useMemo(()=>{

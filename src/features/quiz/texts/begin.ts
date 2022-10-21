@@ -1,15 +1,15 @@
 import Bg1 from '../img/bg.png';
 import {QuestionList} from '../types';
-import Character1 from '../img/ch1.png';
-import Character2 from '../img/ch2.png';
+import {drivers} from '../const';
+import Cover from '../img/cover.svg'
 
 export const BeginList: QuestionList = [{
     id: 101,
+    img: Cover,
     question: `
 <p>Спробуйте себе у ролі водія! Мета гри – отримати 5 зірочок за поїздку від пасажирів хоча б 3 рази. Ви маєте 6 спроб.</p>
 <p>Історії, в яких ви будете брати участь, засновані на реальних подіях, що трапились з водіями Uklon.</p>
     `,
-    img: Bg1,
     answers: [
         {
             id: 1,
@@ -30,7 +30,7 @@ export const BeginList: QuestionList = [{
            `
         ,
             text:`Для Микити це – основне місце роботи. Цінує Uklon за гнучкий графік та стабільний заробіток.`,
-            img:Character1,
+            img:drivers[0],
             next: 103},
             {
                 id: 2,
@@ -40,7 +40,7 @@ export const BeginList: QuestionList = [{
 В Uklon: 3 роки`
                 ,
                 text:`Для Ігора робота з Uklon — підробіток. Він береться за пару вигідних замовлень на день, коли з пасажиром по дорозі. Цінує можливість додаткового заробітку.`,
-                img:Character2,
+                img:drivers[1],
                 next: 104},
         ],
 
