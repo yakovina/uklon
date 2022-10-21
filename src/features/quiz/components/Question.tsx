@@ -16,6 +16,7 @@ import {
     selectCharacter,
     selectQuestionIndex,
     setCharacter,
+    setNewRate,
 } from '../quizSlice';
 import {MykytaList} from '../texts/mykyta';
 import {
@@ -24,17 +25,20 @@ import {
     QuestionType,
 } from '../types';
 import { CSSTransition } from 'react-transition-group';
+import {
+    loadImage,
+    returnIcons,
+} from '../utils';
 import {Car} from './Car';
 import {Header} from './Header';
 import { Loader } from './Loader';
 import AnsIcon from '../img/ansIcon.svg';
 import Line from '../img/line.svg'
-import StarBorderIcon from '@mui/icons-material/StarBorder';
-import StarIcon from '@mui/icons-material/Star';
 import {drivers} from '../const';
 
 
-const MAX_RATE = 5;
+
+
 
 
 export const Question = () => {
@@ -78,6 +82,12 @@ export const Question = () => {
         setLoading(true);
         setInProp(false);
 
+        loadImage(bg)
+            .then( ()=> {
+                setLoading(false);
+                setInProp(true)
+            }).catch(err => console.error(err));
+
         new Image().src = bg;
         setTimeout(() => {
             setLoading(false);
@@ -91,59 +101,61 @@ export const Question = () => {
         setInProp((prev) => {
             return !prev
         })
-
-        if(answer.character){
+        if(item?.rate) {
+            dispatch(setNewRate(item.rate))
+        }
+        if(answer.characterImg){
             dispatch(setCharacter(answer.id));
         }
-        dispatch(nextQuestion(answer))
+        if(answer.next){
+            dispatch(nextQuestion(answer))
+        }
+        else {
+            navigate('result')
+        }
     }
 
-    function returnIcons(rate: number) {
-        return    Array(MAX_RATE).fill(MAX_RATE).map((item, index) => rate && index>= rate ?
-            <StarBorderIcon/>:
-            <StarIcon/>)
-    }
 
     const getQuestions = () => {
         return <div className={styles.questionContainer} style={{ backgroundImage: `url(${bg})` }}>
+            <div className={styles.blur} style={{opacity: characterId?0:1 }} ></div>
             <Header />
             <CSSTransition in={inProp} timeout={1000} classNames="card">
                 <div className={`${styles.question} card`}>
                     <Container maxWidth="md">
-                        <Car/>
+                        {item && item.rate ? (
+                                <div className= {styles.stars}>
+                                    {returnIcons(item.rate)}
+                                </div>
+                        ) : <Car/>}
+
+
                         <div  className = {styles.df}>
                             { characterId && <img src={avatar} alt="" className = {styles.avatar}/>}
                             <div className={styles.questionText} dangerouslySetInnerHTML={{ __html: item?.question || '' }}></div>
                         </div>
 
                         {item && item.rate && (
-                            <div className = {styles.rate}>
-                                <div className= {styles.stars}>
-                                    {returnIcons(item.rate)}
-                                </div>
-
+                            <div className={styles.rate}>
                                 <img src={Line} alt="" className = {styles.line}/>
-
-                                <div className={styles.rateText}>
-                                    {item.rateText}
-                                </div>
                             </div>
                         )}
 
 
                         <ul className={styles.answerContainer} >
                              {item?.answers.map((answer) => {
-                                return <li className={styles.answer} key={answer.id}>
-                                    <button onClick={() => handleAnswerClick(answer)} className={answer?.img && styles.withImage}>
+                                return <li className={`${styles.answer} ${answer?.characterImg && styles.characterWindow}`} key={answer.id}>
+                                    <button onClick={() => handleAnswerClick(answer)} className={answer?.characterImg && styles.withImage}>
                                         <span  className = {styles.icon}>
                                          <img src={AnsIcon} alt="icon"/>
                                         </span>
-                                        {answer?.img && <img src={answer.img}  className = {styles.image} alt=""/>}
-                                        <span>{answer.text}</span>
+                                        {answer?.characterImg && <img src={answer.characterImg}  className = {styles.image} alt=""/>}
+                                        <div dangerouslySetInnerHTML={{ __html: answer.text|| '' }}></div>
                                     </button>
                                 </li>
                             })}
                         </ul>
+
                     </Container>
                 </div>
 

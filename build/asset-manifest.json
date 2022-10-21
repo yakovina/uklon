@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/uklon/static/css/main.0688fd48.css",
-    "main.js": "/uklon/static/js/main.c42b85db.js",
+    "main.css": "/uklon/static/css/main.e61fcb5d.css",
+    "main.js": "/uklon/static/js/main.883b487c.js",
     "static/js/787.ba855225.chunk.js": "/uklon/static/js/787.ba855225.chunk.js",
-    "static/media/cover.svg": "/uklon/static/media/cover.33aedf8f977ec94e45d3aa9bd10a43d3.svg",
+    "static/media/cover.svg": "/uklon/static/media/cover.269c04116ac6d86102bdb7ae263b075a.svg",
     "static/media/page_06.svg": "/uklon/static/media/page_06.a2691ce324033b1fe7aabd49afe6425b.svg",
     "static/media/page_08.svg": "/uklon/static/media/page_08.6cb307592e02b17fd58249511771b451.svg",
     "static/media/page_07.svg": "/uklon/static/media/page_07.fb46e9897b7a8ecec85c18c5b9753b3b.svg",
@@ -15,19 +15,19 @@
     "static/media/page_09.svg": "/uklon/static/media/page_09.015da0d160cdadcfbea6427fadb6775f.svg",
     "static/media/page_03.svg": "/uklon/static/media/page_03.e910e5f797cd0afb9368ed527d895ca5.svg",
     "static/media/Circe.woff": "/uklon/static/media/Circe.8da5582a5f6c40d4b70d.woff",
-    "static/media/driver1.svg": "/uklon/static/media/driver1.358c2e856931490f5c3e64dadba97531.svg",
-    "static/media/driver2.svg": "/uklon/static/media/driver2.7c72af3ad9c3f20e0ca1582c624b4fd7.svg",
+    "static/media/driver2.svg": "/uklon/static/media/driver2.d312d915e7dce3eb331f6ae4af55153e.svg",
     "static/media/logo.png": "/uklon/static/media/logo.f4dbfeb3efd9579567bf.png",
+    "static/media/driver1.svg": "/uklon/static/media/driver1.459a85e43da271ae1d8b30023a38bc9f.svg",
     "static/media/hmarochos_logo_white.svg": "/uklon/static/media/hmarochos_logo_white.29a10c5af4ca183c2119468e193ecd79.svg",
     "static/media/line.svg": "/uklon/static/media/line.efff881a266177646b5556225651be87.svg",
     "static/media/ansIcon.svg": "/uklon/static/media/ansIcon.a767644a46a90eae1fbc0fc88d117912.svg",
     "index.html": "/uklon/index.html",
-    "main.0688fd48.css.map": "/uklon/static/css/main.0688fd48.css.map",
-    "main.c42b85db.js.map": "/uklon/static/js/main.c42b85db.js.map",
+    "main.e61fcb5d.css.map": "/uklon/static/css/main.e61fcb5d.css.map",
+    "main.883b487c.js.map": "/uklon/static/js/main.883b487c.js.map",
     "787.ba855225.chunk.js.map": "/uklon/static/js/787.ba855225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0688fd48.css",
-    "static/js/main.c42b85db.js"
+    "static/css/main.e61fcb5d.css",
+    "static/js/main.883b487c.js"
   ]
 }

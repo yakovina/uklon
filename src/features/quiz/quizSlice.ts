@@ -7,15 +7,15 @@ import {Answer, UserAnswer} from './types';
 import {START_ID} from './utils';
 
 interface QuizState {
-    userAnswers: Array<UserAnswer>,
+    userRates: Array<number>,
     questionIndex: number,
     characterId: number | null
 }
 
 const initialState: QuizState = {
-    userAnswers: [],
     questionIndex: START_ID,
-    characterId: null
+    characterId: null,
+    userRates: []
 };
 
 
@@ -29,15 +29,19 @@ export const quizSlice = createSlice({
         },
         setCharacter: (state, action: PayloadAction<number>) => {
             state.characterId = action.payload
-        }
+        },
+        setNewRate: (state, action: PayloadAction<number>) =>{
+            state.userRates = [...state.userRates, action.payload]
+        },
+        goToStart: () =>({...initialState})
 
     },
 });
 
-export const { nextQuestion, setCharacter } = quizSlice.actions;
+export const { nextQuestion, setCharacter, setNewRate, goToStart} = quizSlice.actions;
 
 export const selectQuestionIndex = (state: RootState) => state.quiz.questionIndex;
-export const selectUserAnswers = (state: RootState) => state.quiz.userAnswers;
+export const selectUserRates= (state: RootState) => state.quiz.userRates;
 export const selectCharacter = (state: RootState) => state.quiz.characterId;
 
 export default quizSlice.reducer;

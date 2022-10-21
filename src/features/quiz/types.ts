@@ -12,8 +12,7 @@ export interface Answer {
     id: number,
     text: string,
     next: number,
-    character?: string,
-    img?: string
+    characterImg?: string,
 }
 
 export type QuestionList = Array<QuestionType>;
