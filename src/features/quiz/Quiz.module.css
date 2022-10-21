@@ -8,7 +8,7 @@
     /* text-transform: uppercase; */
 
 
-.question, .header {
+.question {
     position: relative;
     background-color: rgba(0, 0, 0, 0.9);
     color: #ffffff;
@@ -24,15 +24,26 @@
     border: 2px solid #1de5ac;
 }
 
+.df {
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar{
+    max-width: 70px;
+    margin-right: 20px;
+}
+
 .header{
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 50%;
-    padding: 15px 30px;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 900px;
 }
 
 .logo, .logoHmarochos{
@@ -43,30 +54,20 @@
     text-decoration: none;
     text-align: left;
     font-size: 14px;
-    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
+    border-radius: 25px;
+    border: 2px solid #1de5ac;
 }
 .logo:hover{
     text-decoration: underline;
 }
 
 .logoHmarochos{
+    padding: 20px 30px;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-   position: absolute;
-    top:5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.plash{
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 20px;
-    height: 65px;
-    display: flex;
 }
 
 .questionContainer {
@@ -89,6 +90,7 @@
     margin: 0;
     flex-direction: column;
     transition: 1s ease-in-out;
+    /*margin-left: 90px;*/
 }
 
 .question .answer {
@@ -115,8 +117,18 @@
     transition: 0.5s;
     font-family: inherit;
     /* border: 1px solid transparent */
-
 }
+.question .answer button.withImage .image{
+    height: 100px;
+    margin-right: 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+.question .answer button.withImage .icon{
+    display: none;
+}
+
 
 .question .answer button:hover {
 
@@ -141,12 +153,30 @@
 
 .questionText {
     text-align: justify;
+    width: 100%;
+    padding: 15px 0;
 }
 
 .accent {
     color: #1de5ac;
 }
 
+.rate{
+    background-color: #000000;
+    border-radius: 25px;
+    /*border: 2px solid grey;*/
+    padding: 20px;
+    max-width: 400px;
+    margin: 30px auto;
+}
+.rateText{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.stars{
+    /*color: #1de5ac;*/
+    margin-bottom: 20px;
+}
 
 .loader {
     height: 100vh;

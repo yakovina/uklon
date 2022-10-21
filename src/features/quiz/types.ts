@@ -3,13 +3,17 @@ export interface QuestionType{
     answers: Array<Answer>,
     id: number,
     img?: string,
-
+    rate?: number,
+    rateText?: string,
+    characters?: Array<Object>,
 }
 
 export interface Answer {
     id: number,
     text: string,
     next: number,
+    character?: string,
+    img?: string
 }
 
 export type QuestionList = Array<QuestionType>;
