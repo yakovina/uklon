@@ -25,6 +25,15 @@ import Bg from '../img/cover.jpg'
 import { CSSTransition } from 'react-transition-group';
 import {Loader} from './Loader';
 import {drivers} from '../const';
+import {
+
+    FacebookIcon,
+    FacebookShareButton,
+    TelegramIcon,
+    TelegramShareButton,
+    TwitterIcon,
+    TwitterShareButton,
+} from 'react-share';
 
 
 export const Result = ()=>{
@@ -47,8 +56,10 @@ export const Result = ()=>{
         new Image().src = Bg;
         setTimeout(() => {
             setLoading(false);
+            window.scrollTo(0, 0);
             setInProp(true)
         }, 1500)
+
     }, [])
 
     const onGameReload = () => {
@@ -64,6 +75,7 @@ export const Result = ()=>{
             return !prev
         })
         setScreen(2)
+        window.scrollTo(0, 0);
     }
 
 
@@ -100,11 +112,22 @@ export const Result = ()=>{
             <div className={styles.result}>
 
                 <div className={styles.resultText}>
-                   <p> Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. Працювати водієм може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
+                   <p>Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. Працювати драйвером в Uklon може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
 
                 <p> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</p>
 
-                <p>  Поділитися результатом (кнопки соцмереж)</p>
+                <p>  Поділитися результатом: </p>
+
+                    <p className={styles.social}><FacebookShareButton url={window.location.href}>
+                        <FacebookIcon/>
+                    </FacebookShareButton>
+                        <TelegramShareButton url={window.location.href}>
+                            <TelegramIcon/>
+                        </TelegramShareButton>
+                        <TwitterShareButton url={window.location.href}>
+                            <TwitterIcon/>
+                        </TwitterShareButton>
+                    </p>
                 </div>
 
                 <button onClick={() => onGameReload()} className={styles.button}>

@@ -33,7 +33,6 @@ import {Car} from './Car';
 import {Header} from './Header';
 import { Loader } from './Loader';
 import AnsIcon from '../img/ansIcon.svg';
-import Line from '../img/line.svg'
 import {drivers} from '../const';
 
 
@@ -72,6 +71,7 @@ export const Question = () => {
         if (!itemFound) return;
 
         setItem(itemFound);
+        window.scrollTo(0, 0);
         if (item?.img && bg !== item?.img) {
             setBg(item?.img);
         }
@@ -128,12 +128,6 @@ export const Question = () => {
                             { characterId && <img src={avatar} alt="" className = {styles.avatar}/>}
                             <div className={styles.questionText} dangerouslySetInnerHTML={{ __html: item?.question || '' }}></div>
                         </div>
-
-                        {item && item.rate && (
-                            <div className={styles.rate}>
-                                <img src={Line} alt="" className = {styles.line}/>
-                            </div>
-                        )}
 
 
                         <ul className={styles.answerContainer} >

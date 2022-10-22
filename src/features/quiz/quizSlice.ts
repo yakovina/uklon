@@ -3,7 +3,7 @@ import {
     PayloadAction,
 } from '@reduxjs/toolkit';
 import {RootState} from '../../app/store';
-import {Answer, UserAnswer} from './types';
+import {Answer} from './types';
 import {START_ID} from './utils';
 
 interface QuizState {

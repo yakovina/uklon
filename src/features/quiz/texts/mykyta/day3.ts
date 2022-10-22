@@ -37,12 +37,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Я передумав і їду додому',
+                text: 'Я передумав і їду додому.',
                 next: 201,
             },
             {
                 id: 2,
-                text: 'Працюю',
+                text: 'Працюю.',
                 next: 103,
             },
         ],
@@ -64,7 +64,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Телефоную пасажирці',
+                text: 'Телефоную пасажирці.',
                 next: 105,
             },
             {
