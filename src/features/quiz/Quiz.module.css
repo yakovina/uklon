@@ -414,7 +414,7 @@
 @media screen and (max-width: 980px) {
 
     .logo, .logoHmarochos{
-        padding: 15px 10px;
+        padding: 15px 5px;
         height: auto;
         width: 120px;
         border: none;
@@ -430,6 +430,11 @@
     }
     .logo span{
         text-align: center;
+
+    }
+    .logo.nowrap span{
+        text-align: center;
+        white-space: nowrap;
 
     }
     .logo img, .logoHmarochos img{
