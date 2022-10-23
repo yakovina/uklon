@@ -71,12 +71,17 @@ export const Question = () => {
         if (!itemFound) return;
 
         setItem(itemFound);
+
+        if(!itemFound || itemFound?.id < 103){
+            dispatch(setCharacter(null));
+        }
+
         window.scrollTo(0, 0);
         if (item?.img && bg !== item?.img) {
             setBg(item?.img);
         }
      
-    }, [questionIndex, questions, inProp, item, bg])
+    }, [dispatch, questionIndex, questions, inProp, item, bg])
 
     useEffect(() => {
         setLoading(true);
@@ -98,9 +103,11 @@ export const Question = () => {
         if(item?.rate) {
             dispatch(setNewRate(item.rate))
         }
+
         if(answer.characterImg){
             dispatch(setCharacter(answer.id));
         }
+
         if(answer.next){
             dispatch(nextQuestion(answer))
         }

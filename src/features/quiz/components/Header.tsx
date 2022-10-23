@@ -1,21 +1,26 @@
+import StarIcon from '@mui/icons-material/Star';
 import {
     Box,
     Modal,
-    Typography,
 } from '@mui/material';
-import {useState} from 'react';
+import {
+    useMemo,
+    useState,
+} from 'react';
+import {useAppSelector} from '../../../app/hooks';
+import {MAX_RATE} from '../const';
 import styles from '../Quiz.module.css'
 import Logo from '../img/logo.png';
 import LogoHmarochos from '../img/hmarochos_logo_white.svg';
+import {
+    selectUserRates,
+} from '../quizSlice';
 
-
-const style = {
-
-};
 
 export const Header = () => {
+    const userRates = useAppSelector(selectUserRates);
 
-
+    const amounOfVins = useMemo(()=>userRates.filter(item => item === MAX_RATE).length, [userRates])
     const [open, setOpen] = useState(false);
 
     const handleClose = () => {
@@ -44,15 +49,21 @@ export const Header = () => {
 
     return<>
     <div className={styles.header}>
+        <button className={styles.logo} onClick={()=> setOpen(true)}>
+            <img src={Logo} alt="UKLON" />
+            <span>Партнерська<br/>публікація</span>
+        </button>
+
         <a href="https://uklon.com.ua/" className={styles.logoHmarochos}>
             <img src={LogoHmarochos} alt="Hmarochos" />
         </a>
         {createModal()}
 
-        <button className={styles.logo} onClick={()=> setOpen(true)}>
-        <img src={Logo} alt="UKLON" />
-            <span>Партнерська<br/>публікація</span>
-        </button>
+        <div className={styles.logo}>
+            <span>Зібрано: <span  className={styles.colorfull}>{amounOfVins}</span> x 5</span><StarIcon className={styles.colorfull}/>
+        </div>
+
+
     </div>
     </>
 }

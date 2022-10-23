@@ -27,7 +27,7 @@ export const quizSlice = createSlice({
         nextQuestion: (state, action: PayloadAction<Answer>) => {
           state.questionIndex = action.payload.next;
         },
-        setCharacter: (state, action: PayloadAction<number>) => {
+        setCharacter: (state, action: PayloadAction<number | null>) => {
             state.characterId = action.payload
         },
         setNewRate: (state, action: PayloadAction<number>) =>{
