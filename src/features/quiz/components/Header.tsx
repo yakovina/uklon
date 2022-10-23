@@ -59,7 +59,7 @@ export const Header = () => {
         </a>
         {createModal()}
 
-        <div className={styles.logo}>
+        <div className={`${styles.logo} ${styles.nowrap}`}>
             <span>Зібрано: <span  className={styles.colorfull}>{amounOfVins}</span> x 5</span><StarIcon className={styles.colorfull}/>
         </div>
 
