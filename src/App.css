@@ -70,3 +70,10 @@
   opacity: 1;
   transition: opacity 1s;
 }
+
+.gra{
+  text-align: center;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+}
