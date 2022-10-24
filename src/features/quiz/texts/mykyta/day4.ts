@@ -11,17 +11,17 @@ export const Day4: QuestionList = [{
     answers: [
         {
             id: 1,
-            text: 'Пояснюю, що не можу везти багаж вагою понад 20 кг.',
+            text: 'Пояснюю, що не можу везти багаж вагою понад 20 кг',
             next: 201,
         },
         {
             id: 2,
-            text: 'Вагаюсь кілька секунд.',
+            text: 'Вагаюсь кілька секунд',
             next: 102,
         },
         {
             id: 3,
-            text: 'Мовчки завантажую мішки в авто.',
+            text: 'Мовчки завантажую мішки в авто',
             next: 301,
         },
     ],
@@ -49,7 +49,7 @@ export const Day4: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -60,7 +60,7 @@ export const Day4: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -87,7 +87,7 @@ export const Day4: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 302,
             },
         ],
@@ -99,7 +99,7 @@ export const Day4: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],

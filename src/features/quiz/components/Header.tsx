@@ -10,7 +10,7 @@ import {
 import {useAppSelector} from '../../../app/hooks';
 import {MAX_RATE} from '../const';
 import styles from '../Quiz.module.css'
-import Logo from '../img/logo.png';
+import Logo from '../img/logo.svg';
 import LogoHmarochos from '../img/hmarochos_logo_white.svg';
 import {
     selectUserRates,
@@ -60,7 +60,7 @@ export const Header = () => {
         {createModal()}
 
         <div className={`${styles.logo} ${styles.nowrap}`}>
-            <span>Зібрано: <span  className={styles.colorfull}>{amounOfVins}</span> x 5</span><StarIcon className={styles.colorfull}/>
+            <span>Зібрано: <span  className={styles.colorfullYellow}>{amounOfVins}</span> x 5</span><StarIcon className={styles.colorfullYellow}/>
         </div>
 
 

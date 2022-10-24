@@ -26,16 +26,16 @@ import {
 } from '../types';
 import { CSSTransition } from 'react-transition-group';
 import {
+    load,
     loadImage,
     returnIcons,
 } from '../utils';
 import {Car} from './Car';
 import {Header} from './Header';
 import { Loader } from './Loader';
-import AnsIcon from '../img/ansIcon.svg';
 import {drivers} from '../const';
-
-
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
+import FastForwardIcon from '@mui/icons-material/FastForward';
 
 
 
@@ -87,7 +87,7 @@ export const Question = () => {
         setLoading(true);
         setInProp(false);
 
-        loadImage(bg)
+        load(bg, 1500)
             .then( ()=> {
                 setLoading(false);
                 setInProp(true)
@@ -140,9 +140,10 @@ export const Question = () => {
                         <ul className={styles.answerContainer} >
                              {item?.answers.map((answer) => {
                                 return <li className={`${styles.answer} ${answer?.characterImg && styles.characterWindow}`} key={answer.id}>
-                                    <button onClick={() => handleAnswerClick(answer)} className={answer?.characterImg && styles.withImage}>
+                                    <button onClick={() => handleAnswerClick(answer)} className={`${answer?.characterImg && styles.withImage} ${item.rate && styles.finish}`}>
                                         <span  className = {styles.icon}>
-                                         <img src={AnsIcon} alt="icon"/>
+                                            <FastForwardIcon />
+
                                         </span>
                                         {answer?.characterImg && <img src={answer.characterImg}  className = {styles.image} alt=""/>}
                                         <div dangerouslySetInnerHTML={{ __html: answer.text|| '' }}></div>

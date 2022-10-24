@@ -1,3 +1,4 @@
+import FastForwardIcon from '@mui/icons-material/FastForward';
 import React, {
     useEffect,
     useMemo,
@@ -19,7 +20,10 @@ import {
     selectCharacter,
     selectUserRates,
 } from '../quizSlice';
-import {returnIcons} from '../utils';
+import {
+    load,
+    returnIcons,
+} from '../utils';
 import {Header} from './Header';
 import Bg from '../img/cover.jpg'
 import { CSSTransition } from 'react-transition-group';
@@ -34,6 +38,7 @@ import {
     TwitterIcon,
     TwitterShareButton,
 } from 'react-share';
+import Line from '../img/line.svg'
 
 
 export const Result = ()=>{
@@ -49,17 +54,11 @@ export const Result = ()=>{
 
     const [inProp, setInProp] = useState<boolean>(false);
     const [screen, setScreen] = useState(1);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
 
     useEffect(() => {
-        new Image().src = Bg;
-        setTimeout(() => {
-            setLoading(false);
-            window.scrollTo(0, 0);
-            setInProp(true)
-        }, 1500)
-
+        setInProp(true);
     }, [])
 
     const onGameReload = () => {
@@ -74,13 +73,22 @@ export const Result = ()=>{
         setInProp((prev) => {
             return !prev
         })
-        setScreen(2)
+        new Image().src = Bg;
+        setLoading(true);
+        setInProp(false);
+        load(Bg, 1500)
+            .then( ()=> {
+                setLoading(false);
+                setInProp(true);
+                setScreen(2);
+            }).catch(err => console.error(err));
+
         window.scrollTo(0, 0);
     }
 
 
     const createResult =(screen : number)=>{
-        if( screen === 1)  {
+        if( screen === 2)  {
             return <div className={`${styles.question} card` }>
 
             <div className={`${styles.df} ${styles.result}`}>
@@ -97,44 +105,51 @@ export const Result = ()=>{
                 </div>
                 <div className={styles.resultText}
                      dangerouslySetInnerHTML={{__html: RESULT_TEXTS[resultIndex] || ''}}></div>
+
                 </div>
             </div>
-                <button onClick={onNextReload} className={styles.button}>
+
+
+                <p>  Поділитися результатом: </p>
+
+                <p className={styles.social}><FacebookShareButton url={window.location.href}>
+                    <FacebookIcon size={40}/>
+                </FacebookShareButton>
+                    <TelegramShareButton url={window.location.href} color={'#1de5ac'}>
+                        <TelegramIcon size={40}/>
+                    </TelegramShareButton>
+                    <TwitterShareButton url={window.location.href}>
+                        <TwitterIcon size={40}/>
+                    </TwitterShareButton>
+                </p>
+                <button onClick={() => onGameReload()} className={styles.button}>
                                         <span className={styles.icon}>
-                                         <img src={AnsIcon} alt="icon"/>
+                                                <FastForwardIcon />
                                         </span>
-                    <div dangerouslySetInnerHTML={{__html: 'Далі >>' || ''}}></div>
+                    <div dangerouslySetInnerHTML={{__html: 'Грати знову!' || ''}}></div>
                 </button>
             </div>
         }
-        if(screen===2){
+        if(screen===1){
             return <div className={`${styles.question} card`}>
             <div className={styles.result}>
 
                 <div className={styles.resultText}>
-                   <p>Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. Працювати драйвером в Uklon може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
+                   <p>Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. </p>
+                    <p>Працювати в <b>Uklon Driver</b> може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
 
-                <p> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</p>
+                <> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</>
 
-                <p>  Поділитися результатом: </p>
+                    <img src={Line} alt=""/>
+                <br/>
 
-                    <p className={styles.social}><FacebookShareButton url={window.location.href}>
-                        <FacebookIcon/>
-                    </FacebookShareButton>
-                        <TelegramShareButton url={window.location.href}>
-                            <TelegramIcon/>
-                        </TelegramShareButton>
-                        <TwitterShareButton url={window.location.href}>
-                            <TwitterIcon/>
-                        </TwitterShareButton>
-                    </p>
                 </div>
 
-                <button onClick={() => onGameReload()} className={styles.button}>
+                <button onClick={onNextReload} className={`${styles.button} ${styles.finish}`}>
                                         <span className={styles.icon}>
-                                         <img src={AnsIcon} alt="icon"/>
+                                               <FastForwardIcon />
                                         </span>
-                    <div dangerouslySetInnerHTML={{__html: 'Грати знову' || ''}}></div>
+                    <div dangerouslySetInnerHTML={{__html: 'До результатів!' || ''}}></div>
                 </button>
             </div>
             </div>

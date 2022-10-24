@@ -8,12 +8,12 @@ export const Day6: QuestionList = [{
     answers: [
         {
             id: 1,
-            text: 'Чесно кажу, що ні.',
+            text: 'Чесно кажу, що ні',
             next: 102,
         },
         {
             id: 2,
-            text: 'Намагаюсь віджартуватись, що у Києві давно не лишилось справжніх місцевих.',
+            text: 'Намагаюсь віджартуватись, що у Києві давно не лишилось справжніх місцевих',
             next: 102,
         },
     ],
@@ -23,12 +23,12 @@ export const Day6: QuestionList = [{
     answers: [
     {
         id: 1,
-        text: 'Так.',
+        text: 'Так',
         next: 103,
     },
     {
         id: 2,
-        text: 'Ні, не знаю дорогу, у випадку чогось, не хочу намотувати зайві кілометри.',
+        text: 'Ні, не знаю дорогу, у випадку чогось, не хочу намотувати зайві кілометри',
         next: 201,
     },
 ],
@@ -39,12 +39,12 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Ні, це марно.',
+                text: 'Ні, це марно',
                 next: 202,
             },
             {
                 id: 2,
-                text: 'Так, скажу, що за тих часів я б зараз взагалі не мав роботи.',
+                text: 'Так, скажу, що за тих часів я б зараз взагалі не мав роботи',
                 next: 203,
             },
         ],
@@ -56,7 +56,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 204,
             },
         ],
@@ -68,7 +68,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],
@@ -79,7 +79,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 205,
             },
         ],
@@ -91,7 +91,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],
@@ -104,12 +104,12 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Продовжую слухати пасажира.',
+                text: 'Продовжую слухати пасажира',
                 next: 104,
             },
             {
                 id: 2,
-                text: 'Далі за навігатором, урок вивчено.',
+                text: 'Далі за навігатором, урок вивчено',
                 next: 206,
             },
         ],
@@ -120,12 +120,12 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Ні, це марно.',
+                text: 'Ні, це марно',
                 next: 207,
             },
             {
                 id: 2,
-                text: 'Так, скажу, що за тих часів я би зараз взагалі не мав роботи.',
+                text: 'Так, скажу, що за тих часів я би зараз взагалі не мав роботи',
                 next: 208,
             },
         ],
@@ -136,7 +136,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 210,
             },
         ],
@@ -148,7 +148,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],
@@ -159,7 +159,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 211,
             },
         ],
@@ -171,7 +171,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],
@@ -182,12 +182,12 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Ні.',
+                text: 'Ні',
                 next: 105,
             },
             {
                 id: 2,
-                text: 'Так.',
+                text: 'Так',
                 next: 212,
             },
         ],
@@ -199,7 +199,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],
@@ -211,7 +211,7 @@ export const Day6: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до результатів >>',
+                text: 'Перейти до результатів',
                 next: 0,
             },
         ],

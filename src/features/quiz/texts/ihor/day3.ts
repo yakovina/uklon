@@ -27,12 +27,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Пояснюю все і вирушаю.',
+                text: 'Пояснюю все і вирушаю',
                 next: 103,
             },
             {
                 id: 2,
-                text: 'Прошу пасажирку підійти до мене, а я зачекаю.',
+                text: 'Прошу пасажирку підійти до мене, а я зачекаю',
                 next: 202,
             },
         ],
@@ -45,12 +45,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Пояснюю все і вирушаю.',
+                text: 'Пояснюю все і вирушаю',
                 next: 103,
             },
             {
                 id: 2,
-                text: 'Прошу пасажирку підійти до мене, а я зачекаю.',
+                text: 'Прошу пасажирку підійти до мене, а я зачекаю',
                 next: 202,
             },
         ],
@@ -61,7 +61,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -72,7 +72,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 104,
             },
         ],
@@ -83,12 +83,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Скасую замовлення.',
+                text: 'Скасую замовлення',
                 next: 203,
             },
             {
                 id: 2,
-                text: 'Все одно їду.',
+                text: 'Все одно їду',
                 next: 105,
             },
         ],
@@ -99,7 +99,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -110,12 +110,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Зачекати, доки вона сяде в салон і їхати мовчки, аби скоріше це скінчилось.',
+                text: 'Зачекати, доки вона сяде в салон і їхати мовчки, аби скоріше це скінчилось',
                 next: 204,
             },
             {
                 id: 2,
-                text: 'Віджартуватись й спробувати розрадити жінку.',
+                text: 'Віджартуватись й спробувати розрадити жінку',
                 next: 106,
             },
         ],
@@ -126,7 +126,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 205,
             },
         ],
@@ -138,7 +138,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -150,12 +150,12 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Так, я їй поспівчуваю.',
+                text: 'Так, я їй поспівчуваю',
                 next: 107,
             },
             {
                 id: 1,
-                text: 'Ні, скажу, аби вона була уважнішою.',
+                text: 'Ні, скажу, аби вона була уважнішою',
                 next: 206,
             },
         ],
@@ -167,7 +167,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -179,7 +179,7 @@ export const Day3: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],

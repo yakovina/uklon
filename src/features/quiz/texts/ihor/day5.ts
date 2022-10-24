@@ -8,7 +8,7 @@ export const Day5: QuestionList = [{
     answers: [
         {
             id: 1,
-            text: 'Пошукати, відклавши справи.',
+            text: 'Пошукати, відклавши справи',
             next: 102,
         },
         {
@@ -24,7 +24,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 202,
             },
         ],
@@ -36,7 +36,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -47,7 +47,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 103,
             },
         ],
@@ -58,12 +58,12 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Пояснюєте, що у вас за пів години зустріч, але замовите сервіс «Доставка» в Uklon. Тож інший водій привезе обручку. Ви ретельно запакуєте коштовність і передасте жінці контакти водія.',
+                text: 'Пояснюєте, що у вас за пів години зустріч, але замовите сервіс «Доставка» в Uklon. Тож інший водій привезе обручку. Ви ретельно запакуєте коштовність і передасте жінці контакти водія',
                 next: 104,
             },
             {
                 id: 1,
-                text: 'Завозите річ прямо зараз.',
+                text: 'Завозите річ прямо зараз',
                 next: 105,
             },
         ],
@@ -74,7 +74,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],
@@ -86,7 +86,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Працюю далі >>',
+                text: 'Працюю далі',
                 next: 0,
             },
         ],

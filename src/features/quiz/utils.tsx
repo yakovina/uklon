@@ -14,7 +14,7 @@ import {
 export const START_ID = 101;
 
 const returnAnswerId = (ans: Answer, dayNumber: number)=>{
-    if(dayNumber <6){
+    if(dayNumber <5){
         return ans.next? parseInt(dayNumber.toString()+ans.next.toString()) : parseInt((dayNumber+1).toString()+ START_ID.toString())
     }
     else return ans.next? parseInt(dayNumber.toString()+ans.next.toString()) : 0;
@@ -58,3 +58,13 @@ export const loadImage = (url: string) => new Promise((resolve, reject) => {
     img.src = url;
 });
 
+export function createDelay(ms: number) {
+    return new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+    });
+}
+
+
+export async function load (url: string, delay: number){
+    await  Promise.all([loadImage(url), createDelay(delay)]);
+}

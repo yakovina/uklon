@@ -1,32 +1,30 @@
 {
   "files": {
-    "main.css": "/uklon/static/css/main.5ec01d78.css",
-    "main.js": "/uklon/static/js/main.f3a3d7c0.js",
+    "main.css": "/uklon/static/css/main.9301207b.css",
+    "main.js": "/uklon/static/js/main.3e437c20.js",
     "static/js/787.ba855225.chunk.js": "/uklon/static/js/787.ba855225.chunk.js",
     "static/media/cover.jpg": "/uklon/static/media/cover.5d106b5339277729d493.jpg",
     "static/media/page_10.jpg": "/uklon/static/media/page_10.95df20192bdcf4d650e8.jpg",
     "static/media/page_08.jpg": "/uklon/static/media/page_08.2244f9910f65e0ba0f1e.jpg",
-    "static/media/page_07.jpg": "/uklon/static/media/page_07.9d7fa5a1db5c5ad97061.jpg",
-    "static/media/page_02.jpg": "/uklon/static/media/page_02.eae81b39f2b7bacfcc26.jpg",
-    "static/media/page_01.jpg": "/uklon/static/media/page_01.beb56e05c0470c0af5a1.jpg",
-    "static/media/page_05.jpg": "/uklon/static/media/page_05.355ece2c277251998ee4.jpg",
+    "static/media/page_07.jpg": "/uklon/static/media/page_07.ba960f877f89fbff5b7c.jpg",
+    "static/media/page_01.jpg": "/uklon/static/media/page_01.59fdfe5d51367c2ffcc4.jpg",
+    "static/media/page_02.jpg": "/uklon/static/media/page_02.4d08118ef020384ee64d.jpg",
     "static/media/page_04.jpg": "/uklon/static/media/page_04.8c6033f85f9169323c21.jpg",
-    "static/media/page_06.jpg": "/uklon/static/media/page_06.01663ea3dd759fc3e7d2.jpg",
-    "static/media/page_03.jpg": "/uklon/static/media/page_03.306301773cda7bc56d84.jpg",
-    "static/media/page_09.jpg": "/uklon/static/media/page_09.d2aa0ab70b6b5552f4b8.jpg",
+    "static/media/page_06.jpg": "/uklon/static/media/page_06.cde4a63969909e0331ed.jpg",
+    "static/media/page_09.jpg": "/uklon/static/media/page_09.70aa0fdf97a6a8f0f39d.jpg",
     "static/media/Circe.woff": "/uklon/static/media/Circe.8da5582a5f6c40d4b70d.woff",
     "static/media/driver2.svg": "/uklon/static/media/driver2.d312d915e7dce3eb331f6ae4af55153e.svg",
-    "static/media/logo.png": "/uklon/static/media/logo.f4dbfeb3efd9579567bf.png",
     "static/media/driver1.svg": "/uklon/static/media/driver1.459a85e43da271ae1d8b30023a38bc9f.svg",
     "static/media/hmarochos_logo_white.svg": "/uklon/static/media/hmarochos_logo_white.29a10c5af4ca183c2119468e193ecd79.svg",
+    "static/media/line.svg": "/uklon/static/media/line.efff881a266177646b5556225651be87.svg",
+    "static/media/logo.svg": "/uklon/static/media/logo.0c6ab78f89ceecc9460f06d398029ad5.svg",
     "index.html": "/uklon/index.html",
-    "static/media/ansIcon.svg": "/uklon/static/media/ansIcon.a767644a46a90eae1fbc0fc88d117912.svg",
-    "main.5ec01d78.css.map": "/uklon/static/css/main.5ec01d78.css.map",
-    "main.f3a3d7c0.js.map": "/uklon/static/js/main.f3a3d7c0.js.map",
+    "main.9301207b.css.map": "/uklon/static/css/main.9301207b.css.map",
+    "main.3e437c20.js.map": "/uklon/static/js/main.3e437c20.js.map",
     "787.ba855225.chunk.js.map": "/uklon/static/js/787.ba855225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ec01d78.css",
-    "static/js/main.f3a3d7c0.js"
+    "static/css/main.9301207b.css",
+    "static/js/main.3e437c20.js"
   ]
 }

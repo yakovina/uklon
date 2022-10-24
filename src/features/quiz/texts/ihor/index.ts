@@ -9,4 +9,4 @@ import {Day5} from './day5';
 import {Day6} from './day6';
 
 
-export const IhorList = createList([Day1, Day2, Day3, Day4, Day5, Day6]);
+export const IhorList = createList([Day2, Day3, Day4, Day5, Day6]);

@@ -8,7 +8,7 @@ export const Day5: QuestionList = [{
     answers: [
         {
             id: 1,
-            text: 'Далі >>',
+            text: 'Далі',
             next: 102,
         },
     ],
@@ -19,7 +19,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 103,
             },
         ],
@@ -30,11 +30,11 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Просто перемкну.',
+                text: 'Просто перемкну',
                 next: 201,
             },{
                 id: 2,
-                text: 'Запитаю, чому.',
+                text: 'Запитаю, чому',
                 next: 104,
             },
         ],
@@ -46,11 +46,11 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Нічого не відповідатиму.',
+                text: 'Нічого не відповідатиму',
                 next: 202,
             },{
                 id: 2,
-                text: 'Скажу, що у його колишньої був відмінний смак.',
+                text: 'Скажу, що у його колишньої був відмінний смак',
                 next: 203,
             },
         ],
@@ -61,7 +61,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 204,
             },
         ],
@@ -73,7 +73,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -84,11 +84,11 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Так, ставитиму уточнюючі питання і жалітиму його.',
+                text: 'Так, ставитиму уточнюючі питання і жалітиму його',
                 next: 205,
             },{
                 id: 2,
-                text: 'Ні, я на боці його дівчини.',
+                text: 'Ні, я на боці його дівчини',
                 next: 206,
             },
         ],
@@ -100,7 +100,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -112,7 +112,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -124,16 +124,16 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Скажу, що розумію, чому вони розійшлися і не перемикатиму.',
+                text: 'Скажу, що розумію, чому вони розійшлися і не перемикатиму',
                 next: 207,
             },{
                 id: 2,
-                text: 'Увімкну радіо і скажу, що розумію його колишню.',
+                text: 'Увімкну радіо і скажу, що розумію його колишню',
                 next: 105,
             },
             {
                 id: 3,
-                text: 'Відповім, що у його колишньої був відмінний смак і перемкну.',
+                text: 'Відповім, що у його колишньої був відмінний смак і перемкну',
                 next: 105,
             },
         ],
@@ -144,11 +144,11 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Мовчки вимкну музику, але й радіо не вмикатиму.',
+                text: 'Мовчки вимкну музику, але й радіо не вмикатиму',
                 next: 208,
             },{
                 id: 2,
-                text: '«Моя машина – мої правила».',
+                text: '«Моя машина – мої правила»',
                 next: 208,
             },
         ],
@@ -171,7 +171,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -182,12 +182,12 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Так, буду ставити уточнюючі питання і жаліти його.',
+                text: 'Так, буду ставити уточнюючі питання і жаліти його',
                 next: 106,
             },
             {
                 id: 2,
-                text: 'Ні, я на боці його дівчини.',
+                text: 'Ні, я на боці його дівчини ',
                 next: 210,
             },
         ],
@@ -198,7 +198,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 211,
             },
         ],
@@ -210,7 +210,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
@@ -221,7 +221,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Далі >>',
+                text: 'Далі',
                 next: 107,
             },
         ],
@@ -233,7 +233,7 @@ export const Day5: QuestionList = [{
         answers: [
             {
                 id: 1,
-                text: 'Перейти до наступного дня >>',
+                text: 'Перейти до наступного дня',
                 next: 0,
             },
         ],
