@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uklon/static/css/main.745e3682.css",
-    "main.js": "/uklon/static/js/main.84607261.js",
+    "main.css": "/uklon/static/css/main.362edcb8.css",
+    "main.js": "/uklon/static/js/main.8621184b.js",
     "static/js/787.ba855225.chunk.js": "/uklon/static/js/787.ba855225.chunk.js",
     "static/media/cover.jpg": "/uklon/static/media/cover.566a8a98beba6e417681.jpg",
     "static/media/page_10.jpg": "/uklon/static/media/page_10.8376a932b7e540516aff.jpg",
@@ -18,12 +18,12 @@
     "static/media/hmarochos_logo_white.svg": "/uklon/static/media/hmarochos_logo_white.29a10c5af4ca183c2119468e193ecd79.svg",
     "static/media/logo.svg": "/uklon/static/media/logo.0c6ab78f89ceecc9460f06d398029ad5.svg",
     "index.html": "/uklon/index.html",
-    "main.745e3682.css.map": "/uklon/static/css/main.745e3682.css.map",
-    "main.84607261.js.map": "/uklon/static/js/main.84607261.js.map",
+    "main.362edcb8.css.map": "/uklon/static/css/main.362edcb8.css.map",
+    "main.8621184b.js.map": "/uklon/static/js/main.8621184b.js.map",
     "787.ba855225.chunk.js.map": "/uklon/static/js/787.ba855225.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.745e3682.css",
-    "static/js/main.84607261.js"
+    "static/css/main.362edcb8.css",
+    "static/js/main.8621184b.js"
   ]
 }
