@@ -57,6 +57,7 @@ export const Day3: QuestionList = [{
     },
     {
         id: 202,
+        rate: -1,
         question: `Жінка відмовилась і скасувала замовлення.`,
         answers: [
             {
@@ -95,7 +96,8 @@ export const Day3: QuestionList = [{
     },
     {
         id: 203,
-        question: `Ваша Uklon Karma трохи просідає, але це не критично.`,
+        rate: -1,
+        question: `Ваша Uklon Karma трохи просідає, такий ваш вибір.`,
         answers: [
             {
                 id: 1,

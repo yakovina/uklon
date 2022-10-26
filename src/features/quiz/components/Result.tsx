@@ -4,7 +4,6 @@ import React, {
     useMemo,
     useState,
 } from 'react';
-import {useNavigate} from 'react-router-dom';
 import {
     useAppDispatch,
     useAppSelector,
@@ -13,7 +12,6 @@ import {
     MAX_RATE,
     RESULT_TEXTS,
 } from '../const';
-import AnsIcon from '../img/ansIcon.svg';
 import styles from '../Quiz.module.css';
 import {
     goToStart,
@@ -38,15 +36,18 @@ import {
     TwitterIcon,
     TwitterShareButton,
 } from 'react-share';
-import Line from '../img/line.svg'
+
+
+const location = window.location.href.replace(/[^/]*$/, '');
 
 
 export const Result = ()=>{
     const dispatch = useAppDispatch();
-    let navigate = useNavigate();
-    //
+
     const userRates = useAppSelector(selectUserRates);
     const character = useAppSelector(selectCharacter);
+
+    console.log(character)
 
     const resultIndex = useMemo(()=>{
         return userRates.filter(item => item === MAX_RATE).length;
@@ -63,8 +64,6 @@ export const Result = ()=>{
 
     const onGameReload = () => {
         dispatch(goToStart());
-        navigate('/')
-
     }
 
 
@@ -96,7 +95,7 @@ export const Result = ()=>{
                 <div className={styles.resultContainer}>
                 <div>Ваші результати:</div>
                 <div className={styles.resultStarts}>
-                    {userRates.map(item => {
+                    {userRates.filter(item => item > 0).map(item => {
                         return <div>
                             {returnIcons(item)}
                         </div>
@@ -112,13 +111,13 @@ export const Result = ()=>{
 
                 <p>  Поділитися результатом: </p>
 
-                <p className={styles.social}><FacebookShareButton url={window.location.href}>
+                <p className={styles.social}><FacebookShareButton url={`${location}index_${character}${resultIndex}.html`}>
                     <FacebookIcon size={40}/>
                 </FacebookShareButton>
-                    <TelegramShareButton url={window.location.href} color={'#1de5ac'}>
+                    <TelegramShareButton url={`${location}index_${character}${resultIndex}.html`} color={'#1de5ac'}>
                         <TelegramIcon size={40}/>
                     </TelegramShareButton>
-                    <TwitterShareButton url={window.location.href}>
+                    <TwitterShareButton url={`${location}index_${character}${resultIndex}.html`}>
                         <TwitterIcon size={40}/>
                     </TwitterShareButton>
                 </p>
@@ -138,11 +137,11 @@ export const Result = ()=>{
                    <p>Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. </p>
                     <p>Працювати в <b>Uklon Driver</b> може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
 
-                <> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</>
+                <p> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</p>
 
-                    <img src={Line} alt=""/>
                 <br/>
-
+                    <br/>
+                    <br/>
                 </div>
 
                 <button onClick={onNextReload} className={`${styles.button} ${styles.finish}`}>

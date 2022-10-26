@@ -57,6 +57,7 @@ export const Day4: QuestionList = [{
     {
         id: 203,
         question: `Замовлення скасовано, такий ваш вибір.`,
+        rate: -1,
         answers: [
             {
                 id: 1,

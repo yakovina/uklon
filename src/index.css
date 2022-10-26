@@ -10,11 +10,11 @@ body {
 
 
 *::selection {
-  background: #1de5ac; /* Safari */
+  background: #f5db00; /* Safari */
   color: #000000;
 }
 *::-moz-selection {
-  background: #1de5ac; /* Firefox */
+  background: #f5db00; /* Firefox */
   color: #000000;
 }
 

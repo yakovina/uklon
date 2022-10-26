@@ -39,7 +39,6 @@ export const BeginList: QuestionList = [{
         answers: [{
             id: 1,
             text: `<p><b>Микита</b>, вимушений переселенець, мешкає у Києві з травня 2022 року</b></p>
-<p>Рейтинг: <b>4,8</b></p>
 <p>Авто: <b>Volkswagen Golf</b></p>
 <p>В Uklon: <b>4 місяці</<b></p>
            `,
@@ -49,7 +48,6 @@ export const BeginList: QuestionList = [{
             {
                 id: 2,
                 text: `<p><b>Ігор</b>, живе та працює в Одесі</p>
-<p>Рейтинг: <b>4,9</b></p>
 <p>Авто: <b>Hyundai Accent</b></p>
 <p>В Uklon: <b>3 роки</b></p>`
                 ,
@@ -81,7 +79,7 @@ export const BeginList: QuestionList = [{
         answers: [
             {
                 id: 2,
-                text: '<< Вибрати іншого персонажа',
+                text: 'Вибрати іншого персонажа',
                 next: 102,
             },
             {

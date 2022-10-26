@@ -1,30 +1,24 @@
 import React from 'react';
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from 'react-router-dom';
+import {useAppSelector} from '../../app/hooks';
+
 import {Result} from './components/Result';
 import {Question} from './components/Question';
-import styles from './Quiz.module.css'
+import styles from './Quiz.module.css';
+import {
+    selectFinish,
+} from './quizSlice';
 
 
-const router = createBrowserRouter([
-    {
-        path: `/`,
-        element: <Question />,
-        
-    },
-    {
-        path: `/result`,
-        element: <Result />
-    },
-],{
-    basename: window.location.pathname
-});
 
 export const Quiz: React.FC = ()=>{
+
+    const isFinish = useAppSelector(selectFinish);
+
     return<div className={styles.quiz}>
-        <RouterProvider router={router}  />
+
+        {!isFinish ? <Question /> : <Result />}
+
+
     </div>
 }
 

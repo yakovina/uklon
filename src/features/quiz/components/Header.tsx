@@ -1,4 +1,4 @@
-import StarIcon from '@mui/icons-material/Star';
+
 import {
     Box,
     Modal,
@@ -20,7 +20,7 @@ import {
 export const Header = () => {
     const userRates = useAppSelector(selectUserRates);
 
-    const amounOfVins = useMemo(()=>userRates.filter(item => item === MAX_RATE).length, [userRates])
+
     const [open, setOpen] = useState(false);
 
     const handleClose = () => {
@@ -49,19 +49,19 @@ export const Header = () => {
 
     return<>
     <div className={styles.header}>
+        <a href="https://hmarochos.kiev.ua/" className={styles.logoHmarochos}>
+            <img src={LogoHmarochos} alt="Hmarochos" />
+        </a>
+
         <button className={styles.logo} onClick={()=> setOpen(true)}>
             <img src={Logo} alt="UKLON" />
             <span>Партнерська<br/>публікація</span>
         </button>
 
-        <a href="https://uklon.com.ua/" className={styles.logoHmarochos}>
-            <img src={LogoHmarochos} alt="Hmarochos" />
-        </a>
+
         {createModal()}
 
-        <div className={`${styles.logo} ${styles.nowrap}`}>
-            <span>Зібрано: <span  className={styles.colorfullYellow}>{amounOfVins}</span> x 5</span><StarIcon className={styles.colorfullYellow}/>
-        </div>
+
 
 
     </div>

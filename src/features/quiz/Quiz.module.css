@@ -29,13 +29,13 @@
     box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
     line-height: 1.3636363636;
     border-radius: 25px;
-    border: 2px solid #1de5ac;
+    border: 2px solid #ffffff;
     box-sizing: border-box;
 }
 
 .df {
    display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .avatar{
     max-width: 70px;
@@ -52,23 +52,26 @@
     align-items: center;
     width: 100%;
     max-width: 900px;
+    height: 100px;
 }
 
 .logo, .logoHmarochos{
     /*height: 35px;*/
     display: flex;
+    padding: 0 30px;
     justify-content: center;
     color: #ffffff;
     text-decoration: none;
     text-align: left;
     font-size: 14px;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 30px;
     backdrop-filter: blur(10px);
-    box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);
+    /*box-shadow: 11px 12px 50px -11px rgba(0, 0, 0, 0.67);*/
     border-radius: 25px;
-    border: 2px solid #f5db00;
+    border: none;
+    /*border: 2px solid #f5db00;*/
     font-family: NAMU-Pro;
+    height: 100%;
 }
 .logo:hover{
     text-decoration: underline;
@@ -77,16 +80,23 @@
 
 .logo img{
     height: 35px;
-    margin-right: 15px;
+    margin-right: 17px;
+}
+
+.logoHmarochos img{
+    width: 160px;
 }
 
 .logo{
     align-items: center;
+    line-height: 1;
 }
 
 .logoHmarochos{
-    padding: 20px 30px;
-    height: 50px;
+    /*padding: 20px 30px;*/
+    /*height: 50px;*/
+    display: flex;
+    align-items: center;
 }
 
 
@@ -99,9 +109,9 @@
     padding-top: 130px;
     box-sizing: border-box;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     background-size: cover;
-    background-color: #0f221d;
+    background-color: #28281f;
     color: #ffffff;
     transition: opacity 1s ease-in-out, backdrop-filter 1s ease-in-out;
 }
@@ -204,11 +214,11 @@
 }
 
 .questionText b{
-    color: #1de5ac;
+    /*color: #1de5ac;*/
     text-transform: uppercase;
 }
 .accent {
-    color: #1de5ac;
+    color: #f5db00;
 }
 
 .rate{
@@ -250,6 +260,7 @@
 
 .resultContainer{
    max-width: 300px;
+    margin-left: 15px;
 }
 .result{
     justify-content: center;
@@ -380,12 +391,22 @@
 }
 
 .finish{
-    background-color: rgba(29, 229, 172, 0.6) !important;
+    background-color: #18a980 !important ;
 }
+
 
 .resultText img{
     max-height: 150px;
     margin: 30px;
+}
+
+.question .car{
+    margin-bottom: 30px;
+}
+
+.question .logo {
+    margin-left: auto;
+    padding-right: 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -407,12 +428,13 @@
        justify-content: left;
        align-items: center;
        font-family: NAMU-Pro;
+       padding: 0 30px;
        /*height: auto;*/
        /*max-width: 105px;*/
    }
    .logo img{
        height: 30px;
-       margin-bottom: 5px;
+       margin-bottom: 17px;
    }
 
    .plash{
@@ -431,13 +453,14 @@
 @media screen and (max-width: 980px) {
 
     .logo, .logoHmarochos{
-        padding: 15px 5px;
+        padding: 15px;
         height: auto;
-        width: 120px;
+        width: 150px;
         border: none;
-        border-radius: 0;
-        background-color: transparent;
-        backdrop-filter: none;
+        box-sizing: border-box;
+        /*border-radius: 0;*/
+        /*background-color: transparent;*/
+        /*backdrop-filter: none;*/
     }
     .logo{
         flex-wrap: wrap;
@@ -447,6 +470,7 @@
     }
     .logo span{
         text-align: center;
+        margin-top: 0;
 
     }
     .logo.nowrap span{
@@ -457,18 +481,26 @@
     .logo img, .logoHmarochos img{
         width: 90%;
         height: auto;
-        margin: 0 0 10px 0;
-
-
-    }
-    .header{
-        align-items: stretch;
-        padding: 0;
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 15px;
-        margin-top: 15px;
+        /*margin: 0 0 10px 0;*/
+
+
     }
+
+    .header{
+        height: 100px;
+        padding: 0;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+    /*.header{*/
+    /*    align-items: stretch;*/
+    /*    padding: 0;*/
+    /*    margin: 0;*/
+    /*    background-color: rgba(0, 0, 0, 0.8);*/
+    /*    border-radius: 15px;*/
+    /*    margin-top: 15px;*/
+    /*}*/
 
     .question{
         padding: 30px;
@@ -538,6 +570,11 @@
         display: none;
     }
 
+    .question .logo{
+        margin-left: auto;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
     .question>div {
         padding: 0;
     }
