@@ -10,7 +10,7 @@ export const Day3: QuestionList = [{
     answers: [
         {
             id: 1,
-            text: 'Їду додому — всіх грошей не заробиш',
+            text: 'Їду додому – всіх грошей не заробиш',
             next: 201,
         },
         {

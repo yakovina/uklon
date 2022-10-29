@@ -47,7 +47,6 @@ export const Result = ()=>{
     const userRates = useAppSelector(selectUserRates);
     const character = useAppSelector(selectCharacter);
 
-    console.log(character)
 
     const resultIndex = useMemo(()=>{
         return userRates.filter(item => item === MAX_RATE).length;
@@ -134,10 +133,10 @@ export const Result = ()=>{
             <div className={styles.result}>
 
                 <div className={styles.resultText}>
-                   <p>Як бачите, робота водія — непроста, але цікава й надзвичайно важлива для суспільства. </p>
-                    <p>Працювати в <b>Uklon Driver</b> може кожен, у кого є машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
+                   <p>Як бачите, робота водія – непроста, але цікава й надзвичайно важлива для суспільства. </p>
+                    <p>Працювати з Uklon може кожен, у кого є своя машина. Свій графік і навантаження обираєте ви, а отже самі впливаєте на суму заробітку.</p>
 
-                <p> З Uklon вам завжди по дорозі, який би шлях ви не обирали у житті!</p>
+                    <p>Вам завжди по дорозі з <b>UKLON DRIVER</b>, який би шлях ви не обрали у житті!</p>
 
                 <br/>
                     <br/>

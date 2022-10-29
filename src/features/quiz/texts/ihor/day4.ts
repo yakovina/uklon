@@ -68,7 +68,7 @@ export const Day4: QuestionList = [{
     },
     {
         id: 204,
-        question: `«Я би хотів помовчати», — відповідає пасажир.`,
+        question: `«Я би хотів помовчати», – відповідає пасажир.`,
         answers: [
             {
                 id: 1,
@@ -79,7 +79,7 @@ export const Day4: QuestionList = [{
     },
     {
         id: 205,
-        question: `«Встигаємо», — коротко відповідає пасажир.`,
+        question: `«Встигаємо», – коротко відповідає пасажир.`,
         answers: [
             {
                 id: 1,
@@ -157,7 +157,7 @@ export const Day4: QuestionList = [{
     },
     {
         id: 103,
-        question: `«Я би хотів помовчати», — відповідає пасажир.`,
+        question: `«Я би хотів помовчати», – відповідає пасажир.`,
         answers: [
             {
                 id: 1,
@@ -168,7 +168,7 @@ export const Day4: QuestionList = [{
     },
     {
         id: 210,
-        question: `«Встигаємо», — коротко відповідає пасажир.`,
+        question: `«Встигаємо», – коротко відповідає пасажир.`,
         answers: [
             {
                 id: 1,
